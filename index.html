@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Progress</title>
+</head>
+<body>
+    <div class="progress">
+        <div class="progress-border">
+            <svg class="progress-ring" width="120" height="120">
+                <circle class="progress-ring__circle" stroke="#006eff" stroke-width="8" cx="60" cy="60" r="44" fill="transparent"/>
+            </svg>
+        </div>
+        <div class="inputs">
+            <div class="input">
+                <input type="number" class="percent" id="value">
+                <label for="value">Value</label>
+            </div>
+            <label class="switch">
+                <input type="checkbox" id="animate" onchange="animated()">
+                <span class="slider round"></span>
+                <label class="name" for="animate">Animate</label>
+            </label>
+            <label class="switch">
+                <input type="checkbox" id="hide" onchange="hid()">
+                <span class="slider round"></span>
+                <label class="name" for="hide">Hide</label>
+            </label>
+        </div>
+    </div>
+    <p class="error">Неправильное значение</p>
+</body>
+<script src="main.js"></script>
+</html>
